@@ -63,6 +63,7 @@
     <Folder Include="dbo\StoredProcedures\Product" />
     <Folder Include="dbo\StoredProcedures\Subcategory" />
     <Folder Include="dbo\StoredProcedures\User" />
+    <Folder Include="dbo\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Category.sql" />
@@ -79,6 +80,7 @@
     <Build Include="dbo\StoredProcedures\Category\spCategory_GetAll.sql" />
     <Build Include="dbo\StoredProcedures\Category\spCategory_Insert.sql" />
     <Build Include="dbo\StoredProcedures\Category\spCategory_Update.sql" />
+    <Build Include="dbo\Views\CategoryWithSubcategory.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
