@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jotocca.API", "Jotocca.API\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Jotocca.Database", "Jotocca.Database\Jotocca.Database.sqlproj", "{DAA97E33-6D49-4114-84C5-4383D1783B86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jotocca.DataAccess", "Jotocca.DataAccess\Jotocca.DataAccess.csproj", "{0898755F-A8A4-487B-B8D7-22A698F64BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jotocca.DataAccess", "Jotocca.DataAccess\Jotocca.DataAccess.csproj", "{0898755F-A8A4-487B-B8D7-22A698F64BB3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{069D82D0-12C8-44AF-B000-6D028567B8CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D11EEDB0-E486-4BA9-8411-407C29440AE9}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
