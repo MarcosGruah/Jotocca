@@ -87,6 +87,11 @@
     <Build Include="dbo\StoredProcedures\Subcategory\spSubcategory_GetAll.sql" />
     <Build Include="dbo\StoredProcedures\Subcategory\spSubcategory_Insert.sql" />
     <Build Include="dbo\StoredProcedures\Subcategory\spSubcategory_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Product\spProduct_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Product\spProduct_Get.sql" />
+    <Build Include="dbo\StoredProcedures\Product\spProduct_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\Product\spProduct_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\Product\spProduct_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
