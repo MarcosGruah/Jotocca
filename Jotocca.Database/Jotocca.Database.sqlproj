@@ -74,6 +74,11 @@
     <Build Include="dbo\StoredProcedures\User\spUser_Delete.sql" />
     <Build Include="dbo\StoredProcedures\User\spUser_Insert.sql" />
     <Build Include="dbo\StoredProcedures\User\spUser_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Category\spCategory_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Category\spCategory_Get.sql" />
+    <Build Include="dbo\StoredProcedures\Category\spCategory_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\Category\spCategory_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\Category\spCategory_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
