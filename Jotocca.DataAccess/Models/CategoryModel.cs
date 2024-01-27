@@ -1,6 +1,6 @@
 ﻿namespace Jotocca.DataAccess.Models;
 
-internal class CategoryModel
+public class CategoryModel
 {
     public Guid CategoryId { get; set; }
     public string Name { get; set; } = string.Empty;

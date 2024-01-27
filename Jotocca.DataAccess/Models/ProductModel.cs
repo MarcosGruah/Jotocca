@@ -1,6 +1,6 @@
 ﻿namespace Jotocca.DataAccess.Models;
 
-internal class ProductModel
+public class ProductModel
 {
     public Guid ProductId { get; set; }
     public Guid SubcategoryId { get; set; }
