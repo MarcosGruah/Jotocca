@@ -81,6 +81,7 @@
     <Build Include="dbo\StoredProcedures\Category\spCategory_Insert.sql" />
     <Build Include="dbo\StoredProcedures\Category\spCategory_Update.sql" />
     <Build Include="dbo\Views\CategoryWithSubcategory.sql" />
+    <Build Include="dbo\Views\ProductWithSubcategory.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
