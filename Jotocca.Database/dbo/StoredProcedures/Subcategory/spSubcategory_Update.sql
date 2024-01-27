@@ -5,7 +5,13 @@
 	@Description NVARCHAR(200)
 AS
 BEGIN
-	UPDATE [dbo].[Subcategory]
-	SET [CategoryId] = @CategoryId, [Name] = @Name, [Description] = @Description, [ModifiedDate] = GETUTCDATE()
-	WHERE [SubcategoryId] = @Id;
+	UPDATE
+		[dbo].[Subcategory]
+	SET
+		[CategoryId] = @CategoryId,
+		[Name] = @Name,
+		[Description] = @Description,
+		[ModifiedDate] = GETUTCDATE()
+	WHERE
+		[SubcategoryId] = @Id;
 END

@@ -8,7 +8,16 @@
 	@Image NVARCHAR(200)
 AS
 BEGIN
-	UPDATE [dbo].[Product]
-	SET [SubcategoryId] = @SubcategoryId, [Name] = @Name, [Description] = @Description, [Price] = @Price, [Quantity] = @Quantity, [Image] = @Image, [ModifiedDate] = GETUTCDATE()
-	WHERE [ProductId] = @Id;
+	UPDATE
+		[dbo].[Product]
+	SET
+		[SubcategoryId] = @SubcategoryId,
+		[Name] = @Name,
+		[Description] = @Description,
+		[Price] = @Price,
+		[Quantity] = @Quantity,
+		[Image] = @Image,
+		[ModifiedDate] = GETUTCDATE()
+	WHERE
+		[ProductId] = @Id;
 END

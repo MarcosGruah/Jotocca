@@ -4,7 +4,12 @@
 	@Description NVARCHAR(200)
 AS
 BEGIN
-	UPDATE [dbo].[Category]
-	SET [Name] = @Name, [Description] = @Description, [ModifiedDate] = GETUTCDATE()
-	WHERE [CategoryId] = @Id;
+	UPDATE
+		[dbo].[Category]
+	SET
+		[Name] = @Name,
+		[Description] = @Description,
+		[ModifiedDate] = GETUTCDATE()
+	WHERE
+		[CategoryId] = @Id;
 END

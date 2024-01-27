@@ -3,6 +3,8 @@
 AS
 BEGIN
 	DELETE
-	FROM [dbo].[User]
-	WHERE [UserId] = @Id;
+	FROM
+		[dbo].[User]
+	WHERE
+		[UserId] = @Id;
 END

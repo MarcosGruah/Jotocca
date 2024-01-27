@@ -7,6 +7,22 @@
 	@Image NVARCHAR(200)
 AS
 BEGIN
-	INSERT INTO [dbo].[Product] ([SubcategoryId], [Name], [Description], [Price], [Quantity], [Image])
-	VALUES (@SubcategoryId, @Name, @Description, @Price, @Quantity, @Image);
+	INSERT INTO
+		[dbo].[Product]
+			(
+			[SubcategoryId],
+			[Name],
+			[Description],
+			[Price],
+			[Quantity],
+			[Image]
+			)
+	VALUES
+			(
+			@SubcategoryId,
+			@Name,
+			@Description,
+			@Price,
+			@Quantity,
+			@Image);
 END

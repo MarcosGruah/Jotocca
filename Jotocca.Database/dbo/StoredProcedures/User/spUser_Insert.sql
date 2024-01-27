@@ -2,6 +2,13 @@
 	@Name NVARCHAR(50)
 AS
 BEGIN
-	INSERT INTO [dbo].[User] ([Name])
-	VALUES (@Name);
+	INSERT INTO
+		[dbo].[User]
+			(
+			[Name]
+			)
+	VALUES
+			(
+			@Name
+			);
 END

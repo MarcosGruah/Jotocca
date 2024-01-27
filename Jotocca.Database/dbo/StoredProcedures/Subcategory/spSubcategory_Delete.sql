@@ -3,6 +3,8 @@
 AS
 BEGIN
 	DELETE
-	FROM [dbo].[Subcategory]
-	WHERE [SubcategoryId] = @Id;
+	FROM
+		[dbo].[Subcategory]
+	WHERE
+		[SubcategoryId] = @Id;
 END

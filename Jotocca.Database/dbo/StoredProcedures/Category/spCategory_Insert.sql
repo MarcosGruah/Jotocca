@@ -3,6 +3,15 @@
 	@Description NVARCHAR(200)
 AS
 BEGIN
-	INSERT INTO [dbo].[Category] ([Name], [Description])
-	VALUES (@Name, @Description);
+	INSERT INTO
+		[dbo].[Category]
+			(
+			[Name],
+			[Description]
+			)
+	VALUES
+			(
+			@Name,
+			@Description
+			);
 END
