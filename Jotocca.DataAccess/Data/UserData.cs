@@ -3,7 +3,7 @@ using Jotocca.DataAccess.Models;
 
 namespace Jotocca.DataAccess.Data;
 
-public class UserData(ISqlDataAccess db)
+public class UserData(ISqlDataAccess db) : IUserData
 {
     public Task<IEnumerable<UserModel>> GetAll() => db.LoadData<UserModel, dynamic>("dbo.spUser_GetAll", new { });
 
