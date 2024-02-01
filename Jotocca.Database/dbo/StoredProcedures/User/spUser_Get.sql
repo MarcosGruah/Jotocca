@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spUser_Get]
-	@Id NVARCHAR(50)
+	@UserId NVARCHAR(50)
 AS
 BEGIN
 	SELECT
@@ -10,5 +10,5 @@ BEGIN
 	FROM
 		[dbo].[User]
 	WHERE
-		[UserId] = @Id;
+		[UserId] = @UserId;
 END

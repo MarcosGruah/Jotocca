@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spUser_Update]
-	@Id NVARCHAR(50),
+	@UserId NVARCHAR(50),
 	@Name NVARCHAR(50)
 AS
 BEGIN
@@ -9,5 +9,5 @@ BEGIN
 		[Name] = @Name,
 		[ModifiedDate] = GETUTCDATE()
 	WHERE
-		[UserId] = @Id;
+		[UserId] = @UserId;
 END
