@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spProduct_Update]
-	@Id NVARCHAR(50),
+	@ProductId NVARCHAR(50),
 	@SubcategoryId NVARCHAR(50),
 	@Name NVARCHAR(50),
 	@Description NVARCHAR(200),
@@ -19,5 +19,5 @@ BEGIN
 		[Image] = @Image,
 		[ModifiedDate] = GETUTCDATE()
 	WHERE
-		[ProductId] = @Id;
+		[ProductId] = @ProductId;
 END

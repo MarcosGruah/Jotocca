@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spProduct_Get]
-	@Id NVARCHAR(50)
+	@ProductId NVARCHAR(50)
 AS
 BEGIN
 	SELECT

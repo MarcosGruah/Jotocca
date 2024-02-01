@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spSubcategory_Get]
-	@Id NVARCHAR(50)
+	@SubcategoryId NVARCHAR(50)
 AS
 BEGIN
 	SELECT
@@ -12,5 +12,5 @@ BEGIN
 	FROM
 		[dbo].[Subcategory]
 	WHERE
-		[SubcategoryId] = @Id;
+		[SubcategoryId] = @SubcategoryId;
 END

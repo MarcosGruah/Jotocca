@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spCategory_Update]
-	@Id NVARCHAR(50),
+	@CategoryId NVARCHAR(50),
 	@Name NVARCHAR(50),
 	@Description NVARCHAR(200)
 AS
@@ -11,5 +11,5 @@ BEGIN
 		[Description] = @Description,
 		[ModifiedDate] = GETUTCDATE()
 	WHERE
-		[CategoryId] = @Id;
+		[CategoryId] = @CategoryId;
 END
