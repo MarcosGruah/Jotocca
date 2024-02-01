@@ -15,5 +15,5 @@ BEGIN
 	FROM
 		[dbo].[Product]
 	WHERE
-		[ProductId] = @Id;
+		[ProductId] = @ProductId;
 END
