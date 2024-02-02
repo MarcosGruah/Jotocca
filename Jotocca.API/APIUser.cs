@@ -1,4 +1,4 @@
-﻿using Jotocca.DataAccess.Data;
+﻿using Jotocca.DataAccess.Data.Interface;
 using Jotocca.DataAccess.Models;
 
 namespace Jotocca.API;

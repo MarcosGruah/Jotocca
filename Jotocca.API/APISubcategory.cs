@@ -3,18 +3,18 @@ using Jotocca.DataAccess.Models;
 
 namespace Jotocca.API;
 
-public static class APICategory
+public static class APISubcategory
 {
-    public static void ConfigureCategoryAPI(this WebApplication app)
+    public static void ConfigureSubcategoryAPI(this WebApplication app)
     {
-        app.MapGet("/Categories/GetAll", GetAll);
-        app.MapGet("/Categories/GetCategory/{id}", GetCategory);
-        app.MapPost("/Categories", InsertCategory);
-        app.MapPut("/Categories", UpdateCategory);
-        app.MapDelete("/Categories", DeleteCategory);
+        app.MapGet("/Subcategories/GetAll", GetAll);
+        app.MapGet("/Subcategories/GetCategory/{id}", GetSubcategory);
+        app.MapPost("/Subcategories", InsertSubcategory);
+        app.MapPut("/Subcategories", UpdateSubcategory);
+        app.MapDelete("/Subcategories", DeleteSubcategory);
     }
 
-    private static async Task<IResult> GetAll(ICategoryData data)
+    private static async Task<IResult> GetAll(ISubcategoryData data)
     {
         try
         {
@@ -26,11 +26,11 @@ public static class APICategory
         }
     }
 
-    private static async Task<IResult> GetCategory(ICategoryData data, string id)
+    private static async Task<IResult> GetSubcategory(ISubcategoryData data, string id)
     {
         try
         {
-            var results = await data.GetCategory(id);
+            var results = await data.GetSubcategory(id);
 
             if (results is null)
             {
@@ -47,11 +47,11 @@ public static class APICategory
         }
     }
 
-    private static async Task<IResult> InsertCategory(ICategoryData data, CategoryModel category)
+    private static async Task<IResult> InsertSubcategory(ISubcategoryData data, SubcategoryModel subcategory)
     {
         try
         {
-            await data.InsertCategory(category);
+            await data.InsertSubcategory(subcategory);
             return Results.Ok();
         }
         catch (Exception ex)
@@ -60,11 +60,11 @@ public static class APICategory
         }
     }
 
-    private static async Task<IResult> UpdateCategory(ICategoryData data, CategoryModel category)
+    private static async Task<IResult> UpdateSubcategory(ISubcategoryData data, SubcategoryModel subcategory)
     {
         try
         {
-            await data.UpdateCategory(category);
+            await data.UpdateSubcategory(subcategory);
             return Results.Ok();
         }
         catch (Exception ex)
@@ -73,11 +73,11 @@ public static class APICategory
         }
     }
 
-    private static async Task<IResult> DeleteCategory(ICategoryData data, string id)
+    private static async Task<IResult> DeleteSubcategory(ISubcategoryData data, string id)
     {
         try
         {
-            await data.DeleteCategory(id);
+            await data.DeleteSubcategory(id);
             return Results.Ok();
         }
         catch (Exception ex)

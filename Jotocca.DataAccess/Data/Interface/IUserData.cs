@@ -1,6 +1,6 @@
 ﻿using Jotocca.DataAccess.Models;
 
-namespace Jotocca.DataAccess.Data;
+namespace Jotocca.DataAccess.Data.Interface;
 
 public interface IUserData
 {

@@ -1,5 +1,6 @@
 using Jotocca.API;
 using Jotocca.DataAccess.Data;
+using Jotocca.DataAccess.Data.Interface;
 using Jotocca.DataAccess.DbAccess;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IUserData, UserData>();
 builder.Services.AddSingleton<ICategoryData, CategoryData>();
+builder.Services.AddSingleton<ISubcategoryData, SubcategoryData>();
 
 var app = builder.Build();
 
@@ -25,5 +27,6 @@ app.UseHttpsRedirection();
 
 app.ConfigureUserAPI();
 app.ConfigureCategoryAPI();
+app.ConfigureSubcategoryAPI();
 
 app.Run();
