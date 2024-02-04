@@ -1,5 +1,5 @@
 ﻿using Jotocca.DataAccess.Data.Interface;
-using Jotocca.DataAccess.Models;
+using Jotocca.DataAccess.DTO.User;
 
 namespace Jotocca.API;
 
@@ -47,7 +47,7 @@ public static class APIUser
         }
     }
 
-    private static async Task<IResult> InsertUser(IUserData data, UserModel user)
+    private static async Task<IResult> InsertUser(IUserData data, UserInsertDTO user)
     {
         try
         {
@@ -60,7 +60,7 @@ public static class APIUser
         }
     }
 
-    private static async Task<IResult> UpdateUser(IUserData data, UserModel user)
+    private static async Task<IResult> UpdateUser(IUserData data, UserPutDTO user)
     {
         try
         {

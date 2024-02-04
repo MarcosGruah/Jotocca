@@ -1,4 +1,4 @@
-﻿using Jotocca.DataAccess.Models;
+﻿using Jotocca.DataAccess.DTO.User;
 
 namespace Jotocca.DataAccess.Data.Interface;
 
@@ -6,11 +6,11 @@ public interface IUserData
 {
     Task DeleteUser(string id);
 
-    Task<IEnumerable<UserModel>> GetAll();
+    Task<IEnumerable<UserReadDTO>> GetAll();
 
-    Task<UserModel?> GetUser(string id);
+    Task<UserReadDTO?> GetUser(string id);
 
-    Task InsertUser(UserModel user);
+    Task InsertUser(UserInsertDTO user);
 
-    Task UpdateUser(UserModel user);
+    Task UpdateUser(UserPutDTO user);
 }
